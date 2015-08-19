@@ -26,6 +26,6 @@ class API::EventsController < ApplicationController
 
 	private
 		def event_params
-			params.permit(:event_name)
+			params.permit(:name)
 		end
 end
