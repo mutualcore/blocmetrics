@@ -1,0 +1,15 @@
+<h2>Track a Website</h2>
+<%= form_for @registered_application do |f| %>
+<div class="form-group">
+      <%= f.label :name %><br />
+      <%= f.text_field :name, class: 'form-control', placeholder: "Enter website name" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :url %><br />
+      <%= f.url_field :url, class: 'form-control', placeholder: "Enter the websites's URL" %>
+    </div>
+    <div class="form-group">
+      <%= f.submit "Submit Website", class: 'btn btn-success' %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,12 @@
+<h2>Registered Applications</h2>
+
+<% if current_user %>
+	<%= link_to "Add a Website", new_registered_application_path, class: 'btn btn-success' %>
+<% end %>
+
+<% @registered_applications.each do |a| %>
+	<div class="media">
+		<%= a.name %> (<%=link_to "Edit", edit_registered_application_path(a) %> | <%= link_to "Delete", a, method: :delete %>)<br />
+		<%= a.url %>
+	</div>
+<% end %>
