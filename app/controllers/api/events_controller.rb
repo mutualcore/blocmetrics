@@ -24,6 +24,10 @@ class API::EventsController < ApplicationController
 		end
 	end
 
+	def index
+		head 200
+	end
+
 	private
 		def event_params
 			params.permit(:name)
