@@ -1,5 +1,6 @@
 <h2><%= @registered_application.name %></h2>
 <%= @registered_application.url %>
+<%= link_to "Edit", edit_registered_application_path, class: 'btn btn-success' %>
 
 <h4>Events <span class="badge"><%= @events.count %></span></h4>
 <% @events.each do |e| %>
