@@ -10,7 +10,7 @@ gem 'rails', '4.2.3'
  end
  
  group :development do
-   gem 'sqlite3'
+   gem 'pg'
  end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -55,3 +55,5 @@ gem 'haml'
 gem 'bootstrap-sass'
 gem 'figaro'
 gem 'faker'
+gem 'chartkick'
+gem 'groupdate'
