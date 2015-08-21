@@ -1,3 +1,5 @@
+<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+
 <h2><%= @registered_application.name %></h2>
 <%= @registered_application.url %>
 <%= link_to "Edit", edit_registered_application_path, class: 'btn btn-success' %>
@@ -8,3 +10,5 @@
 		<%= e.name %>
 	</div>
 <% end %>
+
+<%= pie_chart @registered_application.events.group(:name).count %>
